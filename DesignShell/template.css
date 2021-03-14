@@ -1,0 +1,49 @@
+.description {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-style: italic;
+  vertical-align: middle;
+}
+.center {
+  margin: auto;
+  width: 60%;
+  top: 50%;
+  transform: translate(0, 60%);
+  text-align: center;
+  display: block;
+}
+body {
+  background-color: gainsboro;
+}
+form input,
+form textarea {
+  font: 18px Helvetica, Arial, sans-serif;
+  box-sizing: border-box;
+  display: inline;
+  justify-content: center;
+  border: none;
+  padding: 20px;
+  width: 300px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  background-color: rgb(230, 230, 230);
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  align-content: center;
+}
+
+form button {
+  transition: all 0.2s ease-in-out;
+  font: 18px Helvetica, Arial, sans-serif;
+  border: none;
+  background: #3650c4;
+  color: #fff;
+  padding: 20px;
+  width: 300px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+form button:hover {
+  background: #0e82d4;
+  cursor: pointer;
+}
