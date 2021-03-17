@@ -1,0 +1,156 @@
+.navbar {
+    background: #222222;
+  }
+  .nav-item::after {
+    content: "";
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #508fb9;
+    transition: 0.4s;
+  }
+  .nav-item:hover::after {
+    width: 100%;
+  }
+  .navbar-dark .navbar-nav .active > .nav-link,
+  .navbar-dark .navbar-nav .nav-link.active,
+  .navbar-dark .navbar-nav .nav-link.show,
+  .navbar-dark .navbar-nav .show > .nav-link,
+  .navbar-dark .navbar-nav .nav-link:focus,
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #e1e1e1;
+  }
+  .nav-item {
+    padding: 15px 5px;
+    transition: 0.2s;
+  }
+  .dropdown-item.active,
+  .dropdown-item:active {
+    color: #212529;
+  }
+  .dropdown-item:focus,
+  .dropdown-item:hover {
+    background: #e1e1e1;
+  }
+  .navbar-nav a.nav-link {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    padding: 0px !important;
+  }
+  ul.navbar-nav li.nav-item {
+    margin: 0 20px;
+  }
+  ul.navbar-nav .nav-item:after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    transition: width 0.5s ease, background-color 0.5s ease;
+  }
+  .navbar-nav .nav-item:hover:after {
+    width: 100%;
+    background: #3650c4;
+  }
+
+  /* ------------------------------------------------------------------------------- */
+
+  form {
+    display: table;
+    margin: 40px auto;
+  }
+  form input,
+  form textarea {
+    font: 18px Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+    display: block;
+    border: none;
+    padding: 20px;
+    width: 500px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    background-color: rgb(230, 230, 230);
+    outline: none;
+    transition: all 0.2s ease-in-out;
+  }
+  form input::placeholder,
+  form textarea::placeholder {
+    transition: all 0.2s ease-in-out;
+    color: rgb(148, 148, 148);
+    font: 18px Helvetica, Arial, sans-serif;
+  }
+  form input:focus,
+  form textarea:focus,
+  form input.populated,
+  form textarea.populated {
+    padding-top: 28px;
+    padding-bottom: 12px;
+  }
+  form input:focus::placeholder,
+  form textarea:focus::placeholder,
+  form input.populated::placeholder,
+  form textarea.populated::placeholder {
+    color: transparent;
+  }
+  form textarea {
+    height: 200px;
+  }
+  .action{
+    transition: all 0.2s ease-in-out;
+    font: 18px Helvetica, Arial, sans-serif;
+    border: none;
+    background: #3650c4;
+    color: #fff;
+    padding: 20px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+  .action:hover {
+    background: #0e82d4;
+    cursor: pointer;
+  }
+  /* ---------------------------------------------------------------- */
+  .center {
+    margin: auto;
+    width: 100%;
+    top: 100%;
+    transform: translate(0, 10%);
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+}
+
+hr.rounded {
+    border-top: 3px solid #bbb;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+  }
+
+.title{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+.article {
+    font-family: "Roboto", sans-serif;
+    font-size: 17px;
+    font-style: italic;
+    text-align: center;
+}
+
+.image {
+    width: 200px;
+    height: 100px;
+}
+.card-style{
+    padding: 20px;
+    border-collapse: collapse;
+    margin: 45px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="BloggingStyle.css">
+    <script src="SimplyBlogging.js"></script>
+</head>
+<body>
+    <div class="row">
+        <Navbar sticky="top" id="navbar"className="navbar" collapseOnSelect bg="dark" expand="lg">
+        <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+        <Navbar.Collapse id="basic-navbar-nav">
+            <Nav class="navbar justify-content-center fixed-top navbar-expand-lg navbar-dark mr-auto">
+              </NavLink>
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a> 
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                  </li>
+                </ul>
+            </Nav>
+            </Navbar.Collapse>
+          </Navbar>
+    </div>
+    <div class="row center justify-content-md-center">
+        <div class="col-md-auto">
+        <form>
+            <input
+              type="text"
+              id="title"
+              placeholder="Title"
+            />
+            <textarea
+              type="text"
+              id="article"
+              placeholder="Article"
+            ></textarea>
+            <input type="file" id="addImg" value="+ Add Image"/></button>
+            <input type="button" class="action" id="addBlg" value="Add Blog" onclick="addBlog()"/></button>
+          </form>
+        </div>
+    </div>
+    <hr/>
+    <div id="blogRow" class="row" id="contentPanel">
+        <!-- <div id="blog" class="col-sm-2 pb-2">
+            <div id="blogcard" class="card-block card-body">
+                <div id="blogtitle" class="card-title">
+                    <button id="blogclose" type="button" class="rounded rounded-circle" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button> 
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
