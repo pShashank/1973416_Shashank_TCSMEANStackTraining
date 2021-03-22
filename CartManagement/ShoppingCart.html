@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="center">
+        <h1 class="page-title"> Shopping Cart </h1>
+    </div>
+    <br/>
+    <br/><br/>
+    <div class="row" id="contentPanel">
+        <div class="col-sm-3 col-md-3 pb-2">
+            <div class="card card-outline-info" id="">
+                <div class="card-block ">
+                    <h1>Laptop</h1>
+                    <p> 1000</p>
+                    <button id="add1" onclick="addItem(this.id)">Add Item</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 pb-2">
+            <div class="card card-outline-info" >
+                <div class="card-block ">
+                    <h1>Mobile</h1>
+                    <p> 500</p>
+                    <button id="add2" onclick="addItem(this.id)">Add Item</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 pb-2">
+            <div class="card card-outline-info" >
+                <div class="card-block ">
+                    <h1>Perfume</h1>
+                    <p> 20</p>
+                    <button id="add3" onclick="addItem(this.id)">Add Item</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 pb-2">
+            <div class="card card-outline-info" >
+                <div class="card-block ">
+                    <h1>Helmet</h1>
+                    <p> 15</p>
+                    <button id="add4" onclick="addItem(this.id)">Add Item</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-3 col-md-3 pb-2">
+            <div class="card card-outline-info" >
+                <div class="card-block ">
+                    <h1>Bag</h1>
+                    <p> 30</p>
+                    <button id="add5" onclick="addItem(this.id)">Add Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br/><br/><br/>
+    <a href="checkoutPage.html"><input class="exit" type="button" value="Checkout" onclick="storeInSession()"/></a><br/>
+    <script src="CartManagement.js"></script>
+</body>
+</html>
