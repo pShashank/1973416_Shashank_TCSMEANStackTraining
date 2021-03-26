@@ -1,0 +1,36 @@
+<div class="center">
+    <h3 class="description welcome">Welcome {{username}}</h3>
+    <form [formGroup]="portfolioRef">
+        <input
+        type="text"
+        id="contactName"
+        placeholder="Contact Name"
+        formControlName = "name"
+        />
+        <br/>
+        <input
+        type="number"
+        id="phonenumber"
+        placeholder="Phone Number"
+        formControlName = "phone"
+        />
+        <br/>
+        <input class="options" type="button" value="Save" (click)=insertNewRecord()/>
+    </form><br/>
+    <input class="exit" type="button" value="Back" (click)=logout()/>
+    <br/><br/><br/>
+    <table class="styled-table" id="itemList">
+        <thead>
+            <tr>
+                <th>Contact Name</th>
+                <th>Phone Number</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr *ngFor="let contact of contacts">
+                <td>{{contact.name}}</td>
+                <td>{{contact.phone}}</td>
+            </tr> 
+        </tbody>
+        </table>
+</div>

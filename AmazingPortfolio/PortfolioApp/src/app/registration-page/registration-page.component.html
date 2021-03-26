@@ -1,0 +1,30 @@
+<div class="center">
+    <form [formGroup]="regRef">
+        <input
+        type="text"
+        placeholder=" First Name"
+        formControlName = "fname"
+        />
+        <br/>
+        <input
+        type="text"
+        placeholder="Last Name"
+        formControlName = "lname"
+        />
+        <br/>
+        <input
+        type="text"
+        placeholder=" Username"
+        formControlName = "uname"
+        />
+        <br/>
+        <input
+        type="password"
+        placeholder="Password"
+        formControlName = "pass"
+        />
+        <br/>
+        <input class="options" type="button" value="Save" (click)=onRegister()/>
+    </form><br/>
+    <input class="exit" type="button" value="Back" (click)=logout()/><br/>
+</div>
