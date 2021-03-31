@@ -1,0 +1,18 @@
+[
+    {"id": 1,
+     "statement": "What is the capital of United States",
+     "options": ["Chicago","New York","Washinton DC","San Francisco"],
+     "solution": "Washinton DC",
+     "selection": ""},
+     {"id": 2,
+     "statement": "What is the capital of Canada",
+     "options": ["Ottawa","Montreal","Toronto","Quebec"],
+     "solution": "Ottawa",
+     "selection": ""},
+     {"id": 3,
+     "statement": "What is the capital of Brazil",
+     "options": ["Sao Paulo","Rio de Janerio","Salvador","Brasilia"],
+     "solution": "Brasilia",
+     "selection": ""}
+
+]

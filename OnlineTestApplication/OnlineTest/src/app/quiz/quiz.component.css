@@ -1,0 +1,9 @@
+.option {
+  width: fit-content;
+}
+.questionClass {
+  margin: auto;
+  width: 90%;
+  top: 100%;
+  text-align: left;
+}

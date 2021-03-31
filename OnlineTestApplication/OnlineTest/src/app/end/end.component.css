@@ -1,0 +1,12 @@
+.correct {
+  color: rgb(12, 172, 12);
+}
+.wrong {
+  color: rgb(173, 15, 15);
+}
+.resultClass {
+  margin: auto;
+  width: 70%;
+  top: 100%;
+  text-align: center;
+}

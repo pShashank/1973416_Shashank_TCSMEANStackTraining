@@ -1,0 +1,20 @@
+<div>
+    <div class="row page-title">
+        <h2>Online Quiz </h2>
+    </div>
+    <hr>
+    <div class="questionClass" *ngFor="let q of questions; let index=index">
+        <h2 class="question">{{index + 1}}. {{questions[index].statement}}</h2>
+        <form class="optionClass">
+            <fieldset *ngFor="let option of questions[index].options; let i = index">
+                &nbsp;
+                &ensp;<input type="radio" class="option" name="radiobutton" id={{i}} 
+                (change)="onSelectionChange(index,option)">
+                &nbsp;
+                <label> {{option}} </label><br>
+            </fieldset>
+        </form>
+        <hr>
+    </div>
+    <div class="row text-center"><input type="button" class="options" value="Submit" (click)=onSubmit()></div>
+</div>

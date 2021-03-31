@@ -1,0 +1,25 @@
+<div class="row page-title">
+    <h2>Online Quiz </h2>
+</div>
+<hr>
+<div class="resultClass">
+    <table>
+        <tr *ngFor="question of questionsFromChild; let index = index">
+            <div *ngIf="questionsFromChild[index].selection == questionsFromChild[index].solution">
+                <td><h2>{{index+1}}. {{questionsFromChild[index].statement}}</h2></td>
+                &nbsp;
+                <td class="correct"><h2>{{questionsFromChild[index].selection}}</h2></td>
+            </div>
+            <div *ngIf="questionsFromChild[index].selection != questionsFromChild[index].solution">
+                <td><h2>{{index+1}}. {{questionsFromChild[index].statement}}</h2></td>
+                &nbsp;
+                <td class="wrong"><h2>{{questionsFromChild[index].selection}}</h2></td>
+            </div>
+        </tr>
+    </table>
+    <div class="row text-center">
+        <h2>Total Score: <b>{{correct}}/{{total}}</b> </h2>
+        <br/>
+        <h2>Quiz Result: <b>{{result}}</b> </h2>
+    </div>
+</div>
