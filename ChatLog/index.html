@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script type="text/JavaScript">
+        var socket = io();
+        //socket.emit('chat message', "Welcome to WebSocket using socketio app")
+        function sendMsg(){
+            var user = document.getElementById("user").value;
+            var message = document.getElementById("message").value;
+            socket.emit('name', `${user}`);
+            socket.emit('chat message', `${message}`);
+        }
+    </script>
+</head>
+<body>
+    <form id = "msg-form">
+        <label for="name">User: </label> 
+        <input type="text" id ="user"/><br/>
+        <label for="message">Message: </label>
+        <input type="text" id ="message"/><br/>
+        <input type="button" value="submit" onclick = "sendMsg()"/>
+    </form>
+</body>
+</html>
